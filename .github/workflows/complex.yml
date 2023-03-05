@@ -10,13 +10,13 @@ jobs:
        runs-on: windows-latest
        steps:
          - run: date
-   macoS:
+   macos:
       runs-on: macos-latest
-       steps:
+      steps:
          - run: date
    depends:
       needs : [ubuntu,windows,macos]
       runs-on: windows-latest
-       steps:
+      steps:
          - run: date
    
